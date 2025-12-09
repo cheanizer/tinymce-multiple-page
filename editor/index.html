@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TinyMCE Document Editor with Page Breaks</title>
+    <style>
+        /* * CSS for Print Paged Media 
+         * This ensures the page break element renders correctly when printing.
+         */
+        @media print {
+            .mce-pagebreak {
+                /* Forces a new page after the page break marker */
+                page-break-after: always;
+                /* Hides the visual line and text of the page break marker on the printed page */
+                display: block; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">TinyMCE Multiple Page Editor</h2>
+    <div id="editor-container">
+        <textarea id="document-editor">
+            <div class="page" data-page="1">
+                <h1>First Page Content</h1>
+                <p>Type your report, letter, or document here. The editor will automatically create virtual page breaks when content exceeds A4 page height.</p>
+                <p>Each page is visually separated within the same editor.</p>
+                <p>Type your report, letter, or document here. The editor will automatically create virtual page breaks when content exceeds A4 page height.</p>
+                <p>Each page is visually separated within the same editor.</p>
+                <p>Type your report, letter, or document here. The editor will automatically create virtual page breaks when content exceeds A4 page height.</p>
+                <p>Each page is visually separated within the same editor.</p>
+                <p>Type your report, letter, or document here. The editor will automatically create virtual page breaks when content exceeds A4 page height.</p>
+                <p>Each page is visually separated within the same editor.</p>
+                <p>Type your report, letter, or document here. The editor will automatically create virtual page breaks when content exceeds A4 page height.</p>
+                <p>Each page is visually separated within the same editor.</p>
+                <p>Type your report, letter, or document here. The editor will automatically create virtual page breaks when content exceeds A4 page height.</p>
+                <p>Each page is visually separated within the same editor.</p>
+                <p>Type your report, letter, or document here. The editor will automatically create virtual page breaks when content exceeds A4 page height.</p>
+                <p>Each page is visually separated within the same editor.</p>
+            </div>
+        </textarea>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="js/editor.js"></script>
+
+</body>
+</html>

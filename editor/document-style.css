@@ -1,0 +1,31 @@
+/* document-style.css - Virtual Pages within TinyMCE */
+
+/* Main editor container */
+#editor-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* TinyMCE editor styling */
+.tox-tinymce {
+    border: 1px solid #ccc !important;
+}
+
+/* Print styles - hide editor controls when printing */
+@media print {
+    .tox-tinymce .tox-toolbar-overlord,
+    .tox-tinymce .tox-statusbar {
+        display: none !important;
+    }
+    
+    .tox-tinymce .tox-edit-area {
+        border: none !important;
+    }
+    
+    #editor-container {
+        background: white;
+        padding: 0;
+    }
+}
